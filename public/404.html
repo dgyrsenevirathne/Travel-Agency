@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('images/booking.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .error-container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .error-container h1 {
+            font-size: 6em;
+            margin: 0;
+            color: #ff6f61;
+        }
+
+        .error-container h2 {
+            font-size: 1.8em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .error-container p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: #666;
+        }
+
+        .back-home-btn {
+            padding: 15px 30px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-home-btn:hover {
+            background-color: #218838;
+        }
+
+        .error-image {
+            margin: 20px 0;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .error-container h1 {
+                font-size: 4em;
+            }
+
+            .error-container h2 {
+                font-size: 1.5em;
+            }
+
+            .error-container p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="error-container">
+        <h1>404</h1>
+        <h2>Oops! Page Not Found</h2>
+        <p>Sorry, the page you are looking for doesn’t exist or has been moved.</p>
+        <a href="Index.html" class="back-home-btn">Back to Home</a>
+        <div class="error-image">
+            <img src="images/logo.jpg" alt="Lost Traveler Icon" width="200">
+        </div>
+    </div>
+
+</body>
+
+</html>

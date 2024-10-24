@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="contact-info">
+            <div class="info-item">
+                <img src="images/address-icon.png" alt="Address Icon">
+                <span>1234 Travel Street, City, Country</span>
+            </div>
+            <div class="info-item">
+                <img src="images/phone-icon.png" alt="Phone Icon">
+                <span>+1 (234) 567-890</span>
+            </div>
+            <div class="info-item">
+                <img src="images/email-icon.png" alt="Email Icon">
+                <span>info@travelagency.com</span>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook-icon.png" alt="Facebook Icon">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="images/linkedin-icon.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="images/youtube-icon.png" alt="YouTube Icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram-icon.png" alt="Instagram Icon">
+            </a>
+        </div>
+    </header>
+
+    <!-- Moved the navbar inside the hero-section for the video background to cover both -->
+    <div class="hero-section">
+        <video autoplay muted loop class="background-video">
+            <source src="images/your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Travel Agency Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#Hero-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#serv-section">Services</a></li>
+                <li><a href="#pack-section">Packeges</a></li>
+                <li class="dropdown">
+                    <a href="#">Pages</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#desti-section">Destination</a></li>
+                        <li><a href="#book-section">Booking</a></li>
+                        <li><a href="#guy-section">Travel Guide</a></li>
+                        <li><a href="#testi-section">Testimonial</a></li>
+                        <li><a href="404.html">404 Page</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Register.html" class="register-btn">Register</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero content -->
+        <div class="content" id="Hero-section">
+            <h1>Enjoy your vacation with us</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search your destination..." class="search-input">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="about-us" id="about-section">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/about.jpg" alt="About Us" class="about-img">
+            </div>
+            <div class="about-text">
+                <h2 class="about-title">About Us</h2>
+                <h3 class="welcome-text">Welcome to <span class="highlight">Tourist</span></h3>
+                <p>
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
+                    ipsum et lorem et sit.
+                </p>
+                <ul class="about-points">
+                    <li>First Class Flights</li>
+                    <li>5 Star Accommodations</li>
+                    <li>150 Premium City Tours</li>
+                    <li>Handpicked Hotels</li>
+                    <li>24/7 Service</li>
+                </ul>
+                <button class="read-more-btn-about">Read More</button>
+                <div class="additional-info" style="display: none;">
+                    <p>
+                        Here is some additional information about our services. We pride ourselves on providing
+                        exceptional customer service and making your travel experiences unforgettable. Our team of
+                        experts is here to help you with every step of your journey, ensuring a hassle-free experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services-section" id="serv-section">
+        <h2 class="services-title">Services</h2>
+        <h3 class="services-subtitle">Our Services</h3>
+        <div class="services-cards">
+            <div class="service-card" id="worldwide-tours">
+                <img src="images/logo.jpg" alt="Worldwide Tours Logo" class="service-logo">
+                <h4 class="service-card-title">Worldwide Tours</h4>
+                <p class="service-card-description">Explore beautiful destinations around the globe with us.</p>
+            </div>
+            <div class="service-card" id="hotel-reservation">
+                <img src="images/logo.jpg" alt="Hotel Reservation Logo" class="service-logo">
+                <h4 class="service-card-title">Hotel Reservation</h4>
+                <p class="service-card-description">Book luxurious hotels at the best prices.</p>
+            </div>
+            <div class="service-card" id="travel-guides">
+                <img src="images/logo.jpg" alt="Travel Guides Logo" class="service-logo">
+                <h4 class="service-card-title">Travel Guides</h4>
+                <p class="service-card-description">Get expert guidance for your travels.</p>
+            </div>
+            <div class="service-card" id="event-management">
+                <img src="images/logo.jpg" alt="Event Management Logo" class="service-logo">
+                <h4 class="service-card-title">Event Management</h4>
+                <p class="service-card-description">We organize events that you'll never forget.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="destination-section" id="desti-section">
+        <h2 class="destination-title">Destination</h2>
+        <h3 class="destination-subtitle">Popular Destination</h3>
+        <div class="destination-cards">
+            <div class="card">
+                <img src="images/destination1.jpg" alt="Destination 1">
+            </div>
+            <div class="card">
+                <img src="images/destination1.jpg" alt="Destination 2">
+            </div>
+            <div class="card">
+                <img src="images/destination1.jpg" alt="Destination 3">
+            </div>
+            <div class="card">
+                <img src="images/destination1.jpg" alt="Destination 4">
+            </div>
+            <div class="card">
+                <img src="images/destination1.jpg" alt="Destination 5">
+            </div>
+        </div>
+    </div>
+    <div class="packages-section" id="pack-section">
+        <h2 class="packages-title">Packages</h2>
+        <h3 class="packages-subtitle">Awesome Packages</h3>
+        <div class="packages-cards">
+            <!-- Card 1 -->
+            <div class="package-card">
+                <img src="images/thailand.jpg" alt="Thailand" class="package-image">
+                <div class="package-info">
+                    <h4 class="package-location">Thailand</h4>
+                    <p class="package-details">
+                        <i class="fas fa-map-marker-alt"></i> Thailand &nbsp; | &nbsp;
+                        <i class="fas fa-calendar-alt"></i> 3 days &nbsp; | &nbsp;
+                        <i class="fas fa-user-friends"></i> 2 persons
+                    </p>
+                    <p class="package-price">
+                        Price: $500 &nbsp; | &nbsp;
+                        <span class="package-rating">
+                            &#9733;&#9733;&#9733;&#9733;&#9734; (4.5)
+                        </span>
+                    </p>
+                    <p class="package-description">Explore the beautiful beaches and culture of Thailand.</p>
+                    <div class="package-buttons">
+                        <button class="read-more-btn">Read More</button>
+                        <button class="book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="package-card">
+                <img src="images/maldives.jpg" alt="Maldives" class="package-image">
+                <div class="package-info">
+                    <h4 class="package-location">Maldives</h4>
+                    <p class="package-details">
+                        <i class="fas fa-map-marker-alt"></i> Maldives &nbsp; | &nbsp;
+                        <i class="fas fa-calendar-alt"></i> 5 days &nbsp; | &nbsp;
+                        <i class="fas fa-user-friends"></i> 2 persons
+                    </p>
+                    <p class="package-price">
+                        Price: $1200 &nbsp; | &nbsp;
+                        <span class="package-rating">
+                            &#9733;&#9733;&#9733;&#9733;&#9733; (5.0)
+                        </span>
+                    </p>
+                    <p class="package-description">Experience luxury and serenity in the Maldives.</p>
+                    <div class="package-buttons">
+                        <button class="read-more-btn">Read More</button>
+                        <button class="book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="package-card">
+                <img src="images/paris.jpg" alt="Paris" class="package-image">
+                <div class="package-info">
+                    <h4 class="package-location">Paris</h4>
+                    <p class="package-details">
+                        <i class="fas fa-map-marker-alt"></i> Paris &nbsp; | &nbsp;
+                        <i class="fas fa-calendar-alt"></i> 4 days &nbsp; | &nbsp;
+                        <i class="fas fa-user-friends"></i> 2 persons
+                    </p>
+                    <p class="package-price">
+                        Price: $800 &nbsp; | &nbsp;
+                        <span class="package-rating">
+                            &#9733;&#9733;&#9733;&#9733;&#9733; (4.9)
+                        </span>
+                    </p>
+                    <p class="package-description">Discover the romance and history of Paris.</p>
+                    <div class="package-buttons">
+                        <button class="read-more-btn">Read More</button>
+                        <button class="book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="booking-section" id="book-section">
+        <div class="booking-container">
+            <!-- Left Side: Booking Information -->
+            <div class="booking-info">
+                <h3 class="small-title">BOOKING</h3>
+                <h1 class="main-title">Online Booking</h1>
+                <p class="description">Experience hassle-free tour booking with our online service. Choose from multiple
+                    destinations and get ready for your dream vacation!</p>
+                <button class="read-more-btn1">Read More</button>
+            </div>
+
+            <!-- Right Side: Booking Form -->
+            <div class="booking-form">
+                <h2 class="form-title">Book A Tour</h2>
+                <form id="bookingForm">
+                    <input type="text" class="form-field" id="name" placeholder="Your Name" required>
+                    <input type="email" class="form-field" id="email" placeholder="Your Email" required>
+                    <input type="datetime-local" class="form-field" id="bookingDate" required>
+                    <select class="form-field" id="destination" required>
+                        <option value="" disabled selected>Destination</option>
+                        <option value="destination1">Destination 1</option>
+                        <option value="destination2">Destination 2</option>
+                        <option value="destination3">Destination 3</option>
+                    </select>
+                    <button type="submit" class="book-now-btn2">Book Now</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="process-section">
+        <h2 class="process-title">Process</h2>
+        <h3 class="process-subtitle">3 Easy Steps</h3>
+        <div class="process-steps">
+            <!-- Box 1 -->
+            <div class="step-box">
+                <h4 class="step-title">Choose A Destination</h4>
+                <p class="step-description">Select your dream destination from our wide range of options.</p>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="step-box">
+                <h4 class="step-title">Pay Online</h4>
+                <p class="step-description">Make secure payments online with various payment methods.</p>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="step-box">
+                <h4 class="step-title">Fly Today</h4>
+                <p class="step-description">Pack your bags and get ready to enjoy your vacation!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="travel-guide-section" id="guy-section">
+        <h2 class="guide-title">Travel Guide</h2>
+        <h3 class="guide-subtitle">Meet Our Guide</h3>
+        <div class="guides-container">
+            <div class="guide-box">
+                <img src="images/team-1.jpg" alt="Guide 1">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h5>John Doe</h5>
+                <small>Senior Tour Guide</small>
+            </div>
+            <div class="guide-box">
+                <img src="images/team-2.jpg" alt="Guide 2">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h5>Jane Smith</h5>
+                <small>Mountain Expert</small>
+            </div>
+            <div class="guide-box">
+                <img src="images/team-3.jpg" alt="Guide 3">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h5>Mike Johnson</h5>
+                <small>Adventure Specialist</small>
+            </div>
+            <div class="guide-box">
+                <img src="images/team-4.jpg" alt="Guide 4">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h5>Sarah Brown</h5>
+                <small>Wildlife Expert</small>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial-section" id="testi-section">
+        <h2 class="testimonial-title">Testimonial</h2>
+        <h3 class="testimonial-subtitle">Our Clients Say!!!</h3>
+        <div class="testimonial-container">
+            <div class="testimonial-box active">
+                <img src="images/client1.jpg" alt="Client 1" class="client-img">
+                <h5>John Doe</h5>
+                <small>USA</small>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="testimonial-box">
+                <img src="images/client2.jpg" alt="Client 2" class="client-img">
+                <h5>Jane Smith</h5>
+                <small>UK</small>
+                <p>Curabitur vel tincidunt justo, ac consectetur nunc.</p>
+            </div>
+            <div class="testimonial-box">
+                <img src="images/client3.jpg" alt="Client 3" class="client-img">
+                <h5>Mike Johnson</h5>
+                <small>Canada</small>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+            </div>
+            <div class="testimonial-box">
+                <img src="images/client4.jpg" alt="Client 4" class="client-img">
+                <h5>Sarah Brown</h5>
+                <small>Australia</small>
+                <p>Ut malesuada nunc vitae convallis consectetur.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section">
+        <footer>
+            <div class="footer-container">
+                <!-- Company Section -->
+                <div class="footer-company">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</p>
+                    <p><i class="fas fa-phone"></i> +123-456-7890</p>
+                    <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Gallery Section -->
+                <div class="footer-gallery">
+                    <h3>Gallery</h3>
+                    <div class="gallery-images">
+                        <img src="images/gallery1.jpg" alt="Gallery Image">
+                        <img src="images/gallery2.jpg" alt="Gallery Image">
+                        <img src="images/gallery3.jpg" alt="Gallery Image">
+                        <img src="images/gallery2.jpg" alt="Gallery Image">
+                        <img src="images/gallery3.jpg" alt="Gallery Image">
+                        <img src="images/gallery1.jpg" alt="Gallery Image">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="footer-copyright">
+                &copy; Your Site Name, All Right Reserved. Designed By Yasith
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        window.addEventListener('load', function () {
+            // Add the show-content class after a slight delay
+            setTimeout(function () {
+                document.querySelector('.content').classList.add('show-content');
+            }, 300); // 300ms delay
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutSection = document.querySelector('.about-us'); // Select the About Us section
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // If the section is in view, add the animation class
+                        entry.target.classList.add('slide-up');
+                        observer.unobserve(entry.target); // Stop observing after animation
+                    }
+                });
+            });
+
+            observer.observe(aboutSection); // Observe the About Us section
+        });
+
+        document.querySelector('.read-more-btn-about').addEventListener('click', function () {
+            const additionalInfo = document.querySelector('.additional-info');
+            if (additionalInfo.style.display === 'none' || additionalInfo.style.display === '') {
+                additionalInfo.style.display = 'block'; // Show additional info
+                this.textContent = 'Read Less'; // Change button text to 'Read Less'
+            } else {
+                additionalInfo.style.display = 'none'; // Hide additional info
+                this.textContent = 'Read More'; // Change button text back to 'Read More'
+            }
+        });
+
+        // Function to trigger animation on load
+        window.onload = function () {
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`; // Adjust delay for each card
+                card.classList.add('show'); // Optionally add a class to apply styles
+            });
+        };
+
+
+
+        document.getElementById('bookingForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const bookingDate = document.getElementById('bookingDate').value;
+            const destination = document.getElementById('destination').value;
+
+            // Convert the booking date to the correct format (if necessary)
+            const formattedDate = new Date(bookingDate).toISOString().slice(0, 19).replace('T', ' ');
+
+            const response = await fetch('/api/book', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email, booking_date: formattedDate, destination }),
+            });
+
+            const result = await response.json();
+            alert(result.message);
+        });
+
+
+
+
+    </script>
+
+</body>
+
+</html>
